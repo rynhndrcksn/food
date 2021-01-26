@@ -18,5 +18,11 @@ $f3->route('GET /', function() {
 	echo $view->render('views/home.html');
 });
 
+// define a breakfast route
+$f3->route('GET /breakfast', function() {
+	// create a new view and send it to the client
+	echo "Breakfast";
+});
+
 // run fat free HAS TO BE THE LAST THING IN FILE
 $f3->run();
